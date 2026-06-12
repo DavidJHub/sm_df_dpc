@@ -74,7 +74,20 @@ out.Sn_um2            # S_n      varianza de ensanchamiento [µm²]
 Demostración completa (las tres configuraciones, figuras en `examples/output/`):
 
 ```bash
-python examples/demo_simulation.py
+python examples/demo_simulation.py                      # fantoma tipo paper
+python examples/demo_simulation.py --example biominerales
+```
+
+El ejemplo **`biominerales`** arma dos filas de cinco esferas (100→500 µm) de
+**hidroxiapatita** y de **oxalato de calcio** (microcalcificaciones / cálculos
+renales) y está pensado para experimentar con la máscara: editá el bloque
+`MASK_PARAMS` al inicio de `examples/demo_simulation.py` o pasá los parámetros
+por línea de comandos para ver cómo cambian el patrón, el contraste y la
+reconstrucción:
+
+```bash
+python examples/demo_simulation.py --example biominerales \
+    --config DF-DPC --p-mask 53 --slit 20 --p-det 55 --focal-spot 20 --energy 40
 ```
 
 ## Estructura
