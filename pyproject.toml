@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sm-df-dpc"
+version = "0.1.0"
+description = "Simulación y reconstrucción de imagen de rayos X multi-contraste con máscara única (DPC / DF / DF-DPC)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+dev = ["pytest>=7", "matplotlib>=3.7", "nbformat>=5"]
+
+[tool.setuptools.packages.find]
+include = ["sm_df_dpc*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
