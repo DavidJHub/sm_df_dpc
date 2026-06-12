@@ -72,6 +72,13 @@ _LIBRARY = {
     "aluminum":        (7.83e29,        1.54e-4,          0.0),
     "soft_tissue":     (3.46e29,        2.72e-5,          0.005),
     "lung_tissue":     (1.05e29,        0.85e-5,          0.15),
+    # --- Biominerales (microcalcificaciones / cálculos renales) ---
+    # Hidroxiapatita  Ca10(PO4)6(OH)2 (ρ≈3.16 g/cm³): mineral óseo y de
+    # microcalcificaciones mamarias. Cristalina → dark-field marcado.
+    "hydroxyapatite":  (9.47e29,        2.45e-4,          0.20),
+    # Oxalato de calcio monohidrato  CaC2O4·H2O (ρ≈2.2 g/cm³): componente
+    # más frecuente de los cálculos renales. Cristalino → dark-field fuerte.
+    "calcium_oxalate": (6.71e29,        1.22e-4,          0.30),
 }
 
 
